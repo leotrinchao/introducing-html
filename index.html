@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" midia="screen"/>
+    </head>
+
+    <body>
+        <div>
+            <h1 class="titulo">Cadastro de Dados</h1>
+            <p class="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                   
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+                
+            <div class="campo">
+                <label><strong>Qual seu jogo de FPS favorito?</strong></label>
+
+                <label>
+                    <input type="radio" name="fps" value="cs" checked>CS:GO
+                </label>
+    
+                <label>
+                    <input type="radio" name="fps" value="vava" >Valorant
+                </label>
+
+                <label>
+                    <input type="radio" name="fps" value="pb" >Point Blank
+                </label>
+            </div>
+
+            <div class="campo">
+                <label><strong>Escolha seu nível no jogo</strong></label>
+                <select id="nivel">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Básico</option>
+                    <option>Iniciante</option>
+                    <option>Intermediário</option>
+                    <option>Avançado</option>
+                    <option>Profissional</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione seu(s) estilo(s) de arma</strong></label><br><br>
+                    <input type="checkbox" id="arma1" name="arma1" value="Pistola">
+                    <label for="arma1">Pistola</label>
+                    <input type="checkbox" id="arma2" name="arma2" value="Rifle">
+                    <label for="arma2">Rifle</label>
+                    <input type="checkbox" id="arma3" name="arma3" value="SMG">
+                    <label for="arma3">SMG</label>
+                    <input type="checkbox" id="arma4" name="arma4" value="Sniper">
+                    <label for="arma4">Sniper</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label><strong>Conte-nos qual seu mapa favorito, para o jogo escolhido</strong></label>
+                <textarea row="6" style="width: 26em" id="mapa" name="mapa"></textarea>
+            </div>
+
+            <button type="submit" class="botao"><strong>Concluído</strong></button>
+        </form>
+    </body>
+</html>
